@@ -30,10 +30,10 @@
 
 @keyframes marquee-text {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
 }
 /*/////////////////////////////////////// */
@@ -51,10 +51,10 @@
   z-index: 10;
 }
 
-.marquee-container {
+.marquee-text-horizontal .marquee-container {
   display: flex;
   width: fit-content; /* Гнучка ширина */
-  animation: marquee-text 30s linear infinite; /* Безперервна анімація */
+  animation: marquee-text-horizontal 20s linear infinite; /* Безперервна анімація */
 }
 
 .marquee-line-horizontal {
